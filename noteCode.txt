@@ -1,0 +1,16 @@
+'''else:
+                    ties.remove(idx)
+                    ties.append(j)'''
+            if q_values[j] == q_values[idx]:
+                ties.append(j)
+
+dynamic progrmming : For complete finite MDP issue, we need to determinate the best policy, for an optimal
+long term reward. Several methods exists for find an optimal policy, like brute force search (actions power state), monte carlo
+(search among next states, each by one, best reward...).
+
+With theses methods, in practice, it's an exponential computation, it 's will take a lot of time. 
+Dynamic programming, like asynchronous DP, will calculate, in polynomial time, some states and actions, and their 
+possibles next states values, but will not try each combinations. With this method we can have a good approximation of the
+optimal policy, we a much better faster time of computation.
+
+It's can be use, for example, for real time applications for logistic companies, they need to optimize the travel of theirs trucks...
